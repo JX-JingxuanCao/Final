@@ -1,0 +1,219 @@
+/*This Custom CSS file has not been structured in any particular order.
+
+Modify this file to your hearts content and make your website look awesome!*/
+
+
+body{
+	background: linear-gradient(to right, #00b09b, #96c93d);
+	padding-top: 80px;
+}
+
+/*Home*/
+.full-page-bg {
+  position: absolute;
+  margin-top: -80px;
+  padding-bottom: 100px;
+  width:100%;
+  min-height: 100vh;
+  background: url('../img/common/homepage_bg.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+/*Cards*/
+.card{border: none; background-color: transparent;}
+
+/*Navbar Rules*/
+img.nav-bar-img{
+	margin-right: 10px;
+}
+
+.navbar{
+	background-color: #fff;
+
+}
+
+a.navbar-brand{
+	font-family:'Montserrat', Sans-Serif;
+	font-size:
+}
+
+/*Floating Nav*/
+.floating-nav{
+	position: fixed;
+	margin-top: 50px;
+	border-left: 1px solid #727272;
+}
+
+	a.float-nav-link{
+		font-family: 'Lato', Sans-Serif;
+		color: #595959;
+		font-size: 14px;
+		font-weight: 600;
+		text-align: left;
+	}
+
+/*Image Rules*/
+img{
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border: 0px solid #000000;
+}
+
+/*Font Override Rules*/
+h1, h2, h3, h4, h5, h6 {
+	font-family:'Montserrat', Sans-Serif;
+	margin-bottom: 20px;
+}
+	h1.welcome-special{
+		font-size: 90px;
+	}
+
+	h2.welcome-special-sub{
+		font-family: 'Lato', Sans-Serif;
+		font-size: 30px;
+	}
+
+	h3{
+		text-transform: uppercase;
+		color: #a49727;
+		letter-spacing: -0.5px;
+	}
+
+p, li, span, a {
+	font-family: 'Lato', Sans-Serif;
+	text-align: justify;
+	font-weight: 300;
+}
+
+	p{
+		color: #494949;
+		line-height: 30px;
+		margin-bottom: 25px;
+	}
+
+span.img-caption{
+	display: block;
+	font-size: 12px;
+	font-weight: 500;
+	padding: 10px 0px 10px 0px;
+}
+
+/*Container/class etc Override Rules*/
+.welcome-message{
+	margin-top: 200px;
+}
+
+.welcome-button-container{
+	margin-top: 20px;
+}
+
+.welcome-button{
+	background-color: transparent;
+	border-radius: 0px 0px 0px 0px;
+	border: 3px solid #000;
+	font-family:'Montserrat', Sans-Serif;
+	font-size: 15px;
+	color: #000;
+	text-transform: uppercase;
+}
+
+.welcome-button:hover{
+	background-color: #000;
+	border-color: #000;
+}
+
+.master-heading{
+	padding-top: 50px;
+}
+
+.section-heading{
+	padding-top: 100px;
+}
+
+.slide-show{
+	padding: 30px 0px 50px 0px;
+}
+
+/*Footer*/
+.footer{
+	margin-top: 50px;
+	padding-top: 30px;
+	width: 100%;
+	min-height: 100px;
+	background-color: #989898;
+	border-top: 1px solid #727272;
+}
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateX(0);
+		-ms-transform:     translateX(0);
+		transform:         translateX(0)
+	}
+	40% {
+		-webkit-transform: translateX(+30px);
+		-ms-transform:     translateX(+30px);
+		transform:         translateX(+30px)
+	}
+	60% {
+		-webkit-transform: translateX(+15px);
+		-ms-transform:     translateX(+15px);
+		transform:         translateX(+15px)
+	}
+}
+ul {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  /* animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite; */
+  color: white;
+}
+ul:hover {
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+}
+
+.line {
+      position: relative;
+      top: 50%;
+      width: 16em;
+      margin: 0 auto;
+      border-right: 2px solid rgba(255, 255, 255, 0.75);
+      font-size: 280%;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;transform: translateY(-50%);
+}
+
+/*Animation*/
+
+.anim-typewriter {
+      animation: typewriter 4s steps(40) 1s 1 normal both,
+      blinkTextCursor 500ms steps(40) infinite normal;
+}
+
+@keyframes typewriter {
+      from {
+            width: 0;
+      }
+      to {
+            width: 16em;
+      }
+}
+
+@keyframes blinkTextCursor {
+      from {
+            border-right-color: rgba(255, 255, 255, 0.75);
+      }
+      to {
+            border-right-color: transparent;
+      }
+}
